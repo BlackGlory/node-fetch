@@ -102,6 +102,8 @@ export default class Request extends Body {
 		this.agent = init.agent || input.agent;
 		this.highWaterMark = init.highWaterMark || input.highWaterMark || 16384;
 		this.insecureHTTPParser = init.insecureHTTPParser || input.insecureHTTPParser || false;
+
+		this.keepalive = init.keepalive === undefined ? false : init.keepalive;
 	}
 
 	get method() {
