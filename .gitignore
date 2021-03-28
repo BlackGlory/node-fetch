@@ -2,7 +2,7 @@
 ~*.sketch
 
 # Generated files
-dist/
+# dist/
 
 # Logs
 logs
